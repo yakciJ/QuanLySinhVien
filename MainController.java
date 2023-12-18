@@ -20,7 +20,7 @@ public class MainController {
     @FXML
     public void TrangChu(ActionEvent e) throws Exception{
         System.out.println("Vao trang chu");
-        Stage Main = (Stage) NutSV.getScene().getWindow();
+        Stage Main = (Stage) NutMain.getScene().getWindow();
         Main.close();
         Stage Stage = new Stage();
         Main App = new Main();
