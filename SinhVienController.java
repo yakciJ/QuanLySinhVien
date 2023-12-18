@@ -5,12 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class MainController {
+public class SinhVienController {
 
     @FXML
     private Button NutMain;
-    @FXML
-    private Button NutSV;
     @FXML
     private Button NutDiemThi;
     @FXML
@@ -27,15 +25,6 @@ public class MainController {
         App.start(Stage);
     }
     @FXML
-    public void SinhVien(ActionEvent e) throws Exception{
-        System.out.println("Vao trang sinh vien");
-        Stage Main = (Stage) NutSV.getScene().getWindow();
-        Main.close();
-        Stage Stage = new Stage();
-        SinhVien App = new SinhVien();
-        App.start(Stage);
-    }
-    @FXML
     public void DiemThi(ActionEvent e) throws Exception{
         System.out.println("Vao trang sinh vien");
         Stage Main = (Stage) NutDiemThi.getScene().getWindow();
@@ -47,7 +36,7 @@ public class MainController {
     @FXML
     public void LichHoc(ActionEvent e) throws Exception{
         System.out.println("Vao trang sinh vien");
-        Stage Main = (Stage) NutDiemThi.getScene().getWindow();
+        Stage Main = (Stage) NutLichHoc.getScene().getWindow();
         Main.close();
         Stage Stage = new Stage();
         LichHoc App = new LichHoc();
@@ -56,7 +45,7 @@ public class MainController {
     @FXML
     public void TaiChinh(ActionEvent e) throws Exception{
         System.out.println("Vao trang sinh vien");
-        Stage Main = (Stage) NutDiemThi.getScene().getWindow();
+        Stage Main = (Stage) NutTaiChinh.getScene().getWindow();
         Main.close();
         Stage Stage = new Stage();
         TaiChinh App = new TaiChinh();
