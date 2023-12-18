@@ -47,7 +47,7 @@ public class MainController {
     @FXML
     public void LichHoc(ActionEvent e) throws Exception{
         System.out.println("Vao trang sinh vien");
-        Stage Main = (Stage) NutDiemThi.getScene().getWindow();
+        Stage Main = (Stage) NutLichHoc.getScene().getWindow();
         Main.close();
         Stage Stage = new Stage();
         LichHoc App = new LichHoc();
@@ -56,7 +56,7 @@ public class MainController {
     @FXML
     public void TaiChinh(ActionEvent e) throws Exception{
         System.out.println("Vao trang sinh vien");
-        Stage Main = (Stage) NutDiemThi.getScene().getWindow();
+        Stage Main = (Stage) NutTaiChinh.getScene().getWindow();
         Main.close();
         Stage Stage = new Stage();
         TaiChinh App = new TaiChinh();
